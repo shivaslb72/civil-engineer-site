@@ -17,7 +17,6 @@
     <meta name="author" content="Manjunath Sahukar" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Social Media -->
     <meta
       property="og:title"
       content="Civil Engineer Bengaluru - Manjunath Sahukar"
@@ -29,7 +28,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yourwebsite.com" />
 
-    <!-- Local Business Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -44,7 +42,7 @@
         },
         "telephone": "+91-81058-66706",
         "email": "shivaslb72@gmail.com",
-        "priceRange": "$",
+        "priceRange": "₹₹",
         "areaServed": {
           "@type": "City",
           "name": "Bengaluru"
@@ -73,6 +71,7 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
         color: #333;
+        scroll-behavior: smooth;
       }
 
       header {
@@ -120,6 +119,29 @@
         margin-bottom: 1rem;
       }
 
+      .stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ffd700;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+        opacity: 0.9;
+      }
+
       .services {
         padding: 4rem 0;
         background: #f9f9f9;
@@ -157,9 +179,158 @@
         font-size: 1.3rem;
       }
 
-      .booking-section {
+      .gallery {
         padding: 4rem 0;
         background: white;
+      }
+
+      .gallery h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #1e3c72;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        aspect-ratio: 4/3;
+        background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+
+      .gallery-placeholder {
+        font-size: 3rem;
+        color: #999;
+      }
+
+      .testimonials {
+        padding: 4rem 0;
+        background: #f9f9f9;
+      }
+
+      .testimonials h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #1e3c72;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .testimonial-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #2a5298;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+      }
+
+      .testimonial-author {
+        font-weight: bold;
+        color: #1e3c72;
+      }
+
+      .testimonial-role {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      .rating {
+        color: #ffd700;
+        margin-bottom: 0.5rem;
+      }
+
+      .faq {
+        padding: 4rem 0;
+        background: white;
+      }
+
+      .faq h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #1e3c72;
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: #f9f9f9;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 1.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s;
+      }
+
+      .faq-question:hover {
+        background: #e8e8e8;
+      }
+
+      .faq-answer {
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0, 1, 0, 1);
+      }
+
+      .faq-answer.active {
+        padding: 0 1.5rem 1.5rem;
+        max-height: 1000px; /* Fixed bug: use large max-height for smooth transition */
+        transition: all 0.4s cubic-bezier(1, 0, 1, 0);
+      }
+
+      .faq-toggle {
+        font-size: 1.5rem;
+        color: #2a5298;
+        transition: transform 0.3s;
+      }
+
+      .faq-toggle.active {
+        transform: rotate(45deg);
+      }
+
+      .booking-section {
+        padding: 4rem 0;
+        background: #f9f9f9;
       }
 
       .booking-section h2 {
@@ -172,7 +343,7 @@
       .booking-form {
         max-width: 600px;
         margin: 0 auto;
-        background: #f9f9f9;
+        background: white;
         padding: 2rem;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -224,7 +395,12 @@
         transition: transform 0.3s, box-shadow 0.3s;
       }
 
-      .btn:hover {
+      .btn:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+
+      .btn:hover:not(:disabled) {
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
@@ -254,6 +430,16 @@
         align-items: center;
       }
 
+      .contact-item a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .contact-item a:hover {
+        opacity: 0.8;
+      }
+
       footer {
         background: #0f1f3d;
         color: white;
@@ -271,23 +457,137 @@
         text-align: center;
       }
 
+      /* WhatsApp Floating Button */
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: transform 0.3s;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+        background-color: #20ba5a;
+      }
+
+      .pricing {
+        padding: 4rem 0;
+        background: white;
+      }
+
+      .pricing h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #1e3c72;
+      }
+
+      .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .pricing-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 2px solid #e0e0e0;
+        transition: transform 0.3s, border-color 0.3s;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-5px);
+        border-color: #2a5298;
+      }
+
+      .pricing-card h3 {
+        color: #1e3c72;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .price {
+        font-size: 2rem;
+        color: #2a5298;
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+
+      .price-note {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1rem;
+      }
+
+      .pricing-features {
+        list-style: none;
+        margin: 1.5rem 0;
+      }
+
+      .pricing-features li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .pricing-features li:before {
+        content: "✓ ";
+        color: #4caf50;
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+
       @media (max-width: 768px) {
         h1 {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
-
         .hero h2 {
           font-size: 1.5rem;
         }
-
+        .stats {
+          gap: 1.5rem;
+        }
+        .stat-number {
+          font-size: 2rem;
+        }
         .contact-details {
           flex-direction: column;
           gap: 1.5rem;
+        }
+        .whatsapp-float {
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+          bottom: 20px;
+          right: 20px;
         }
       }
     </style>
   </head>
   <body>
+    <a
+      href="https://wa.me/918105866706?text=Hello%20Manjunath%2C%20I%20would%20like%20to%20book%20a%20site%20visit"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      💬
+    </a>
+
     <header>
       <div class="container">
         <div class="header-content">
@@ -306,6 +606,20 @@
           Over 10 years of experience in residential, commercial, and
           infrastructure projects across Karnataka
         </p>
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -359,7 +673,137 @@
       </div>
     </section>
 
-    <section class="booking-section">
+    <section class="gallery">
+      <div class="container">
+        <h2>Our Projects</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="gallery-placeholder">🏗️</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">🏠</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">🏢</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">🏘️</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <h2>Service Packages</h2>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <h3>Basic Site Visit</h3>
+            <div class="price">₹2,500</div>
+            <p class="price-note">Single site inspection</p>
+            <ul class="pricing-features">
+              <li>Site inspection (up to 2 hours)</li>
+              <li>Basic assessment report</li>
+              <li>Consultation during visit</li>
+              <li>Photo documentation</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Comprehensive Review</h3>
+            <div class="price">₹5,000</div>
+            <p class="price-note">Detailed analysis</p>
+            <ul class="pricing-features">
+              <li>Extended site inspection (4 hours)</li>
+              <li>Detailed technical report</li>
+              <li>Structural assessment</li>
+              <li>Material quality check</li>
+              <li>Recommendations document</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <h3>Project Consultation</h3>
+            <div class="price">Custom</div>
+            <p class="price-note">Ongoing support</p>
+            <ul class="pricing-features">
+              <li>Multiple site visits</li>
+              <li>Project management support</li>
+              <li>Regular quality inspections</li>
+              <li>Vendor coordination</li>
+              <li>Complete documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">
+              "Manjunath's expertise was invaluable during our home
+              construction. His attention to detail ensured everything was built
+              to the highest standards."
+            </p>
+            <p class="testimonial-author">Rajesh Kumar</p>
+            <p class="testimonial-role">Homeowner, Whitefield</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">
+              "Professional, punctual, and extremely knowledgeable. Manjunath
+              helped us identify structural issues before they became major
+              problems."
+            </p>
+            <p class="testimonial-author">Priya Sharma</p>
+            <p class="testimonial-role">Commercial Developer, Koramangala</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>How long does a typical site visit take?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              A basic site visit typically takes 2-3 hours. For comprehensive
+              inspections including structural assessments, it may take 4-5
+              hours.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>What areas do you cover?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              I primarily cover Bengaluru and surrounding areas within 50km
+              radius.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+              <span>Do you provide written reports?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              Yes, all site visits include a written report with findings,
+              photos, and recommendations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
       <div class="container">
         <h2>Book a Site Visit</h2>
         <form
@@ -370,7 +814,7 @@
         >
           <div class="success-message" id="successMessage">
             Thank you! Your booking request has been submitted. We'll contact
-            you within 24 hours to confirm.
+            you shortly.
           </div>
 
           <div class="form-group">
@@ -390,13 +834,7 @@
 
           <div class="form-group">
             <label for="location">Site Location *</label>
-            <input
-              type="text"
-              id="location"
-              name="location"
-              placeholder="Address or area"
-              required
-            />
+            <input type="text" id="location" name="location" required />
           </div>
 
           <div class="form-group">
@@ -407,8 +845,6 @@
               <option value="consultation">Project Consultation</option>
               <option value="structural">Structural Assessment</option>
               <option value="quality">Quality Assurance</option>
-              <option value="residential">Residential Project</option>
-              <option value="commercial">Commercial Project</option>
             </select>
           </div>
 
@@ -419,14 +855,12 @@
 
           <div class="form-group">
             <label for="message">Project Details</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Describe your project and specific requirements..."
-            ></textarea>
+            <textarea id="message" name="message"></textarea>
           </div>
 
-          <button type="submit" class="btn">Request Site Visit</button>
+          <button type="submit" class="btn" id="submitBtn">
+            Request Site Visit
+          </button>
         </form>
       </div>
     </section>
@@ -437,11 +871,13 @@
         <div class="contact-details">
           <div class="contact-item">
             <h3>📞 Phone</h3>
-            <p>+91 81058 66706</p>
+            <p><a href="tel:+918105866706">+91 81058 66706</a></p>
           </div>
           <div class="contact-item">
             <h3>✉️ Email</h3>
-            <p>shivaslb72@gmail.com</p>
+            <p>
+              <a href="mailto:shivaslb72@gmail.com">shivaslb72@gmail.com</a>
+            </p>
           </div>
           <div class="contact-item">
             <h3>📍 Location</h3>
@@ -455,14 +891,71 @@
       <div class="container">
         <p>
           &copy; 2026 Eng. Manjunath Sahukar - Civil Engineering Consultancy.
-          All rights reserved.
         </p>
       </div>
     </footer>
 
     <script>
+      // Set min date to today
       const today = new Date().toISOString().split("T")[0];
       document.getElementById("date").setAttribute("min", today);
+
+      // Fixed FAQ Toggle Bug: Better animation and closes others
+      function toggleFAQ(element) {
+        const allAnswers = document.querySelectorAll(".faq-answer");
+        const allToggles = document.querySelectorAll(".faq-toggle");
+        const currentAnswer = element.nextElementSibling;
+        const currentToggle = element.querySelector(".faq-toggle");
+
+        const isOpen = currentAnswer.classList.contains("active");
+
+        // Close all
+        allAnswers.forEach((ans) => ans.classList.remove("active"));
+        allToggles.forEach((tog) => tog.classList.remove("active"));
+
+        // Open current if it was closed
+        if (!isOpen) {
+          currentAnswer.classList.add("active");
+          currentToggle.classList.add("active");
+        }
+      }
+
+      // AJAX Form Submission (Bug fix: Prevents page redirection)
+      const form = document.getElementById("bookingForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const successMsg = document.getElementById("successMessage");
+
+      form.onsubmit = async (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Sending...";
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            successMsg.style.display = "block";
+            form.reset();
+            submitBtn.innerText = "Submitted Successfully";
+          } else {
+            alert(
+              "Oops! There was a problem. Please try again or use WhatsApp."
+            );
+            submitBtn.disabled = false;
+            submitBtn.innerText = "Request Site Visit";
+          }
+        } catch (error) {
+          alert("Connection error. Please contact via WhatsApp.");
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Request Site Visit";
+        }
+      };
     </script>
   </body>
 </html>
