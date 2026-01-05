@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Civil Engineer Mysuru | Site Visit Booking | Manjunath Sahukar
+    </title>
+    <meta
+      name="description"
+      content="Professional Civil Engineer in Mysuru with 10 years experience. Book site visits for construction inspection, structural assessment, residential & commercial projects. Call +91 81058 66706"
+    />
+    <meta
+      name="keywords"
+      content="civil engineer Mysuru, site visit engineer, construction inspection Mysuru, structural engineer Karnataka, building inspection, civil engineering consultant, residential construction Mysuru, commercial projects engineer"
+    />
+    <meta name="author" content="Manjunath Sahukar" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media -->
+    <meta
+      property="og:title"
+      content="Civil Engineer Mysuru - Manjunath Sahukar"
+    />
+    <meta
+      property="og:description"
+      content="Book professional civil engineering site visits in Mysuru. 10+ years experience in construction inspection and structural assessment."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Manjunath Sahukar Civil Engineering",
+        "description": "Professional Civil Engineering Consultancy and Site Visit Services",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mysuru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-81058-66706",
+        "email": "bsahukarm@gmail.com",
+        "priceRange": "$",
+        "areaServed": {
+          "@type": "City",
+          "name": "Mysuru"
+        },
+        "serviceType": [
+          "Civil Engineering",
+          "Site Inspection",
+          "Structural Assessment",
+          "Construction Consultation"
+        ],
+        "knowsAbout": [
+          "Civil Engineering",
+          "Construction Management",
+          "Structural Design"
+        ]
+      }
+    </script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 2rem 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .header-content {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        opacity: 0.95;
+      }
+
+      .hero {
+        background: linear-gradient(
+            rgba(30, 60, 114, 0.8),
+            rgba(42, 82, 152, 0.8)
+          ),
+          url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f0f0" width="1200" height="600"/><path fill="%23ddd" d="M0 400l50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20 50-20 50 20V600H0z"/></svg>');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .services {
+        padding: 4rem 0;
+        background: #f9f9f9;
+      }
+
+      .services h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #1e3c72;
+      }
+
+      .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .service-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .service-card h3 {
+        color: #1e3c72;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+
+      .booking-section {
+        padding: 4rem 0;
+        background: white;
+      }
+
+      .booking-section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #1e3c72;
+      }
+
+      .booking-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #f9f9f9;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #2a5298;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .btn {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        width: 100%;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-info {
+        background: #1e3c72;
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .contact-info h2 {
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+      .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer {
+        background: #0f1f3d;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+      }
+
+      .success-message {
+        display: none;
+        background: #4caf50;
+        color: white;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .hero h2 {
+          font-size: 1.5rem;
+        }
+
+        .contact-details {
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1>Eng. Manjunath Sahukar - Civil Engineer Mysuru</h1>
+          <p class="tagline">
+            Professional Civil Engineering Consultancy in Mysuru, Karnataka
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Expert Civil Engineering Site Visits in Mysuru</h2>
+        <p>
+          Over 10 years of experience in residential, commercial, and
+          infrastructure projects across Karnataka
+        </p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Services Offered</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>🏗️ Site Inspection</h3>
+            <p>
+              Comprehensive evaluation of construction sites, structural
+              integrity assessment, and quality control inspections.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>📋 Project Consultation</h3>
+            <p>
+              Expert guidance on project planning, feasibility studies, and
+              technical advisory for all construction phases.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>📐 Structural Assessment</h3>
+            <p>
+              Detailed analysis of existing structures, foundation evaluation,
+              and recommendations for repairs or renovations.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>✅ Quality Assurance</h3>
+            <p>
+              Material testing supervision, construction quality monitoring, and
+              compliance verification with building codes.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>🏠 Residential Projects</h3>
+            <p>
+              Home construction oversight, renovation guidance, and structural
+              safety assessments for residential properties.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>🏢 Commercial Projects</h3>
+            <p>
+              Large-scale project management, commercial building inspections,
+              and infrastructure development consultation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-section">
+      <div class="container">
+        <h2>Book a Site Visit</h2>
+        <form
+          class="booking-form"
+          id="bookingForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <div class="success-message" id="successMessage">
+            Thank you! Your booking request has been submitted. We'll contact
+            you within 24 hours to confirm.
+          </div>
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="location">Site Location *</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Address or area"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required *</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="site-inspection">Site Inspection</option>
+              <option value="consultation">Project Consultation</option>
+              <option value="structural">Structural Assessment</option>
+              <option value="quality">Quality Assurance</option>
+              <option value="residential">Residential Project</option>
+              <option value="commercial">Commercial Project</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Date *</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Describe your project and specific requirements..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Request Site Visit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <h3>📞 Phone</h3>
+            <p>+91 81058 66706</p>
+          </div>
+          <div class="contact-item">
+            <h3>✉️ Email</h3>
+            <p>bsahukarm@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <h3>📍 Location</h3>
+            <p>Bengaluru, Karnataka</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2026 Eng. Manjunath Sahukar - Civil Engineering Consultancy.
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const today = new Date().toISOString().split("T")[0];
+      document.getElementById("date").setAttribute("min", today);
+    </script>
+  </body>
+</html>
